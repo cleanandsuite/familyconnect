@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Disney-inspired Magical Color Palette */
+    --background: 40 33% 97%;
+    --foreground: 210 30% 15%;
+    --card: 40 33% 98%;
+    --card-foreground: 210 30% 15%;
+    --popover: 40 33% 98%;
+    --popover-foreground: 210 30% 15%;
+    --primary: 210 50% 25%;
+    --primary-foreground: 40 33% 97%;
+    --secondary: 30 50% 90%;
+    --secondary-foreground: 210 30% 15%;
+    --muted: 30 20% 92%;
+    --muted-foreground: 210 10% 45%;
+    --accent: 35 50% 55%;
+    --accent-foreground: 210 30% 15%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 20% 85%;
+    --input: 30 20% 88%;
+    --ring: 210 50% 35%;
+    --radius: 0.75rem;
+    --sidebar-background: 40 33% 97%;
+    --sidebar-foreground: 210 30% 15%;
+    --sidebar-primary: 210 50% 25%;
+    --sidebar-primary-foreground: 40 33% 97%;
+    --sidebar-accent: 30 50% 90%;
+    --sidebar-accent-foreground: 210 30% 15%;
+    --sidebar-border: 30 20% 85%;
+    --sidebar-ring: 210 50% 35%;
+    /* Custom Disney-inspired colors */
+    --royal-blue: 210 50% 25%;
+    --warm-gold: 38 60% 55%;
+    --forest-green: 145 40% 30%;
+    --rose-pink: 350 50% 75%;
+    --lavender: 260 35% 80%;
+    --cream: 40 33% 97%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  .text-royal-blue {
+    color: hsl(var(--royal-blue));
+  }
+  .text-warm-gold {
+    color: hsl(var(--warm-gold));
+  }
+  .bg-royal-blue {
+    background-color: hsl(var(--royal-blue));
+  }
+  .bg-warm-gold {
+    background-color: hsl(var(--warm-gold));
+  }
+  .bg-forest-green {
+    background-color: hsl(var(--forest-green));
+  }
+  .bg-rose-pink {
+    background-color: hsl(var(--rose-pink));
+  }
+  .bg-lavender {
+    background-color: hsl(var(--lavender));
+  }
+  .bg-cream {
+    background-color: hsl(var(--cream));
+  }
+}
